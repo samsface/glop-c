@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,10 +19,7 @@
       <header>
         <h1>Glop-c</h1>
         <p>Soft Body Physics w/ Velocity Verlet</p>
-
         <p class="view"><a href="https://github.com/samsface/glop-c">View the Project on GitHub <small>samsface/glop-c</small></a></p>
-
-
         <ul>
           <li><a href="https://github.com/samsface/glop-c/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/samsface/glop-c/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -28,44 +27,72 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Glop-c is an open source C engine for simulating deformable soft bodies in 2D. It's developed by Sam Murray under <a href="http://opensource.org/licenses/mit-license.php">the MIT License (MIT)</a>. While this license does not require acknowledgement, I would appreciate a credit to Glop-c in your product.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h2>
+<a name="glop-c-features" class="anchor" href="#glop-c-features"><span class="octicon octicon-link"></span></a>Glop-c Features</h2>
+
+<hr><h3>
+<a name="physics" class="anchor" href="#physics"><span class="octicon octicon-link"></span></a>Physics</h3>
+
+<ul>
+<li>Elastic &amp; destructable constraints</li>
+<li>SAT collision solving</li>
+<li>Fast broad-phase using AABB with spatial buckets</li>
+<li>Water &amp; air resistance</li>
+<li>Thrusters, balloons, oscillators and other special body types</li>
+</ul><h3>
+<a name="system" class="anchor" href="#system"><span class="octicon octicon-link"></span></a>System</h3>
+
+<ul>
+<li>OSX &amp; Unix platforms</li>
+<li>Multi-core support</li>
+<li>Light-weight code base at less than 100kb</li>
+</ul><h3>
+<a name="testbed" class="anchor" href="#testbed"><span class="octicon octicon-link"></span></a>Testbed</h3>
+
+<ul>
+<li>OpenGL GUI on <a href="http://freeglut.sourceforge.net/">freeglut</a>
+</li>
+<li>Scriptable dev console</li>
+<li>JSON serialization</li>
+</ul><h3>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h3>
+
+<ul>
+<li>User Manual</li>
+<li>Doxygen full brief</li>
+</ul><hr><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Run the following code:</p>
+
+<pre><code>git clone https://github.com/samsface/glop-c.git
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>and copy the header and c files to you source code tree.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>Alternatively, run <code>make test</code> to compile and run the test environment.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h2>
+<a name="documentation-1" class="anchor" href="#documentation-1"><span class="octicon octicon-link"></span></a>Documentation</h2>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>Full documentation can be found <a href="http://github.io/glop-c/docs/">here</a>.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p><a href="http://opensource.org/licenses/mit-license.php">The MIT License (MIT)</a></p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/samsface">samsface</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/samsface">samsface</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
